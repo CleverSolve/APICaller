@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9617B7BA213730F900BF794B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7AD213730F700BF794B /* Roboto-Regular.ttf */; };
+		9617B7BB213730F900BF794B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7AE213730F700BF794B /* LICENSE.txt */; };
+		9617B7BC213730F900BF794B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7AF213730F700BF794B /* Roboto-BoldItalic.ttf */; };
+		9617B7BD213730F900BF794B /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B0213730F700BF794B /* Roboto-LightItalic.ttf */; };
+		9617B7BE213730F900BF794B /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B1213730F800BF794B /* Roboto-MediumItalic.ttf */; };
+		9617B7BF213730F900BF794B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B2213730F800BF794B /* Roboto-Bold.ttf */; };
+		9617B7C0213730F900BF794B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B3213730F800BF794B /* Roboto-Italic.ttf */; };
+		9617B7C1213730F900BF794B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B4213730F800BF794B /* Roboto-Light.ttf */; };
+		9617B7C2213730F900BF794B /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B5213730F800BF794B /* Roboto-ThinItalic.ttf */; };
+		9617B7C3213730F900BF794B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B6213730F800BF794B /* Roboto-Medium.ttf */; };
+		9617B7C4213730F900BF794B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B7213730F900BF794B /* Roboto-Black.ttf */; };
+		9617B7C5213730F900BF794B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B8213730F900BF794B /* Roboto-Thin.ttf */; };
+		9617B7C6213730F900BF794B /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B9213730F900BF794B /* Roboto-BlackItalic.ttf */; };
+		9617B7C72137320500BF794B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 968D94D221371A7B004DF911 /* Info.plist */; };
+		9617B7C921374BAF00BF794B /* MSFT.json in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7C821374BAF00BF794B /* MSFT.json */; };
+		968D94C721371A7B004DF911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94C621371A7B004DF911 /* AppDelegate.swift */; };
+		968D94CC21371A7B004DF911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968D94CA21371A7B004DF911 /* Main.storyboard */; };
+		968D94CE21371A7B004DF911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968D94CD21371A7B004DF911 /* Assets.xcassets */; };
+		968D94D121371A7B004DF911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968D94CF21371A7B004DF911 /* LaunchScreen.storyboard */; };
+		968D94E121372BD6004DF911 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E021372BD6004DF911 /* DataTableViewCell.swift */; };
+		968D94E321372BEC004DF911 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E221372BEC004DF911 /* DataTableViewController.swift */; };
+		968D94E521372CD3004DF911 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E421372CD3004DF911 /* DesignableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9617B7AD213730F700BF794B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		9617B7AE213730F700BF794B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9617B7AF213730F700BF794B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9617B7B0213730F700BF794B /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		9617B7B1213730F800BF794B /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9617B7B2213730F800BF794B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		9617B7B3213730F800BF794B /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		9617B7B4213730F800BF794B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		9617B7B5213730F800BF794B /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9617B7B6213730F800BF794B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		9617B7B7213730F900BF794B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		9617B7B8213730F900BF794B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		9617B7B9213730F900BF794B /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9617B7C821374BAF00BF794B /* MSFT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MSFT.json; sourceTree = "<group>"; };
+		968D94C321371A7A004DF911 /* API Caller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API Caller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968D94C621371A7B004DF911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		968D94CB21371A7B004DF911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		968D94CD21371A7B004DF911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		968D94D021371A7B004DF911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		968D94D221371A7B004DF911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968D94E021372BD6004DF911 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		968D94E221372BEC004DF911 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		968D94E421372CD3004DF911 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		968D94C021371A7A004DF911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9617B7AC213730BE00BF794B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9617B7AE213730F700BF794B /* LICENSE.txt */,
+				9617B7B7213730F900BF794B /* Roboto-Black.ttf */,
+				9617B7B9213730F900BF794B /* Roboto-BlackItalic.ttf */,
+				9617B7B2213730F800BF794B /* Roboto-Bold.ttf */,
+				9617B7AF213730F700BF794B /* Roboto-BoldItalic.ttf */,
+				9617B7B3213730F800BF794B /* Roboto-Italic.ttf */,
+				9617B7B4213730F800BF794B /* Roboto-Light.ttf */,
+				9617B7B0213730F700BF794B /* Roboto-LightItalic.ttf */,
+				9617B7B6213730F800BF794B /* Roboto-Medium.ttf */,
+				9617B7B1213730F800BF794B /* Roboto-MediumItalic.ttf */,
+				9617B7AD213730F700BF794B /* Roboto-Regular.ttf */,
+				9617B7B8213730F900BF794B /* Roboto-Thin.ttf */,
+				9617B7B5213730F800BF794B /* Roboto-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		968D94BA21371A7A004DF911 = {
+			isa = PBXGroup;
+			children = (
+				968D94C521371A7A004DF911 /* API Caller */,
+				968D94C421371A7A004DF911 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		968D94C421371A7A004DF911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				968D94C321371A7A004DF911 /* API Caller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		968D94C521371A7A004DF911 /* API Caller */ = {
+			isa = PBXGroup;
+			children = (
+				9617B7AC213730BE00BF794B /* fonts */,
+				968D94C621371A7B004DF911 /* AppDelegate.swift */,
+				968D94CA21371A7B004DF911 /* Main.storyboard */,
+				968D94E421372CD3004DF911 /* DesignableView.swift */,
+				968D94CD21371A7B004DF911 /* Assets.xcassets */,
+				968D94CF21371A7B004DF911 /* LaunchScreen.storyboard */,
+				968D94D221371A7B004DF911 /* Info.plist */,
+				968D94E021372BD6004DF911 /* DataTableViewCell.swift */,
+				968D94E221372BEC004DF911 /* DataTableViewController.swift */,
+				9617B7C821374BAF00BF794B /* MSFT.json */,
+			);
+			path = "API Caller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		968D94C221371A7A004DF911 /* API Caller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 968D94D521371A7B004DF911 /* Build configuration list for PBXNativeTarget "API Caller" */;
+			buildPhases = (
+				968D94BF21371A7A004DF911 /* Sources */,
+				968D94C021371A7A004DF911 /* Frameworks */,
+				968D94C121371A7A004DF911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "API Caller";
+			productName = "API Caller";
+			productReference = 968D94C321371A7A004DF911 /* API Caller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		968D94BB21371A7A004DF911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CleverSolve;
+				TargetAttributes = {
+					968D94C221371A7A004DF911 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 968D94BE21371A7A004DF911 /* Build configuration list for PBXProject "API Caller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 968D94BA21371A7A004DF911;
+			productRefGroup = 968D94C421371A7A004DF911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				968D94C221371A7A004DF911 /* API Caller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		968D94C121371A7A004DF911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9617B7C3213730F900BF794B /* Roboto-Medium.ttf in Resources */,
+				9617B7C2213730F900BF794B /* Roboto-ThinItalic.ttf in Resources */,
+				9617B7BC213730F900BF794B /* Roboto-BoldItalic.ttf in Resources */,
+				968D94D121371A7B004DF911 /* LaunchScreen.storyboard in Resources */,
+				9617B7BD213730F900BF794B /* Roboto-LightItalic.ttf in Resources */,
+				9617B7C1213730F900BF794B /* Roboto-Light.ttf in Resources */,
+				968D94CE21371A7B004DF911 /* Assets.xcassets in Resources */,
+				9617B7C921374BAF00BF794B /* MSFT.json in Resources */,
+				9617B7C6213730F900BF794B /* Roboto-BlackItalic.ttf in Resources */,
+				9617B7BE213730F900BF794B /* Roboto-MediumItalic.ttf in Resources */,
+				9617B7C5213730F900BF794B /* Roboto-Thin.ttf in Resources */,
+				9617B7C72137320500BF794B /* Info.plist in Resources */,
+				9617B7BF213730F900BF794B /* Roboto-Bold.ttf in Resources */,
+				9617B7BA213730F900BF794B /* Roboto-Regular.ttf in Resources */,
+				9617B7C0213730F900BF794B /* Roboto-Italic.ttf in Resources */,
+				9617B7C4213730F900BF794B /* Roboto-Black.ttf in Resources */,
+				9617B7BB213730F900BF794B /* LICENSE.txt in Resources */,
+				968D94CC21371A7B004DF911 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		968D94BF21371A7A004DF911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968D94E521372CD3004DF911 /* DesignableView.swift in Sources */,
+				968D94C721371A7B004DF911 /* AppDelegate.swift in Sources */,
+				968D94E321372BEC004DF911 /* DataTableViewController.swift in Sources */,
+				968D94E121372BD6004DF911 /* DataTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		968D94CA21371A7B004DF911 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				968D94CB21371A7B004DF911 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		968D94CF21371A7B004DF911 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				968D94D021371A7B004DF911 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		968D94D321371A7B004DF911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		968D94D421371A7B004DF911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		968D94D621371A7B004DF911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "API Caller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CleverSolve.API-Caller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		968D94D721371A7B004DF911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "API Caller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CleverSolve.API-Caller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		968D94BE21371A7A004DF911 /* Build configuration list for PBXProject "API Caller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968D94D321371A7B004DF911 /* Debug */,
+				968D94D421371A7B004DF911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		968D94D521371A7B004DF911 /* Build configuration list for PBXNativeTarget "API Caller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968D94D621371A7B004DF911 /* Debug */,
+				968D94D721371A7B004DF911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 968D94BB21371A7A004DF911 /* Project object */;
+}
