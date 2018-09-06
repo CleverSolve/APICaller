@@ -22,6 +22,9 @@
 		9617B7C6213730F900BF794B /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7B9213730F900BF794B /* Roboto-BlackItalic.ttf */; };
 		9617B7C72137320500BF794B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 968D94D221371A7B004DF911 /* Info.plist */; };
 		9617B7C921374BAF00BF794B /* MSFT.json in Resources */ = {isa = PBXBuildFile; fileRef = 9617B7C821374BAF00BF794B /* MSFT.json */; };
+		9642BC11213F15750025DD99 /* MyAPITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642BC10213F15750025DD99 /* MyAPITableViewController.swift */; };
+		9642BC13213F18C90025DD99 /* MyAPITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642BC12213F18C90025DD99 /* MyAPITableViewCell.swift */; };
+		968C0B64213FD37C006F213A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C0B63213FD37C006F213A /* Model.swift */; };
 		968D94C721371A7B004DF911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94C621371A7B004DF911 /* AppDelegate.swift */; };
 		968D94CC21371A7B004DF911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968D94CA21371A7B004DF911 /* Main.storyboard */; };
 		968D94CE21371A7B004DF911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968D94CD21371A7B004DF911 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		9617B7B8213730F900BF794B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		9617B7B9213730F900BF794B /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		9617B7C821374BAF00BF794B /* MSFT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MSFT.json; sourceTree = "<group>"; };
+		9642BC10213F15750025DD99 /* MyAPITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPITableViewController.swift; sourceTree = "<group>"; };
+		9642BC12213F18C90025DD99 /* MyAPITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPITableViewCell.swift; sourceTree = "<group>"; };
+		968C0B63213FD37C006F213A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		968D94C321371A7A004DF911 /* API Caller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API Caller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968D94C621371A7B004DF911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968D94CB21371A7B004DF911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				968D94E021372BD6004DF911 /* DataTableViewCell.swift */,
 				968D94E221372BEC004DF911 /* DataTableViewController.swift */,
 				9617B7C821374BAF00BF794B /* MSFT.json */,
+				9642BC10213F15750025DD99 /* MyAPITableViewController.swift */,
+				9642BC12213F18C90025DD99 /* MyAPITableViewCell.swift */,
+				968C0B63213FD37C006F213A /* Model.swift */,
 			);
 			path = "API Caller";
 			sourceTree = "<group>";
@@ -207,6 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968C0B64213FD37C006F213A /* Model.swift in Sources */,
+				9642BC13213F18C90025DD99 /* MyAPITableViewCell.swift in Sources */,
+				9642BC11213F15750025DD99 /* MyAPITableViewController.swift in Sources */,
 				968D94E521372CD3004DF911 /* DesignableView.swift in Sources */,
 				968D94C721371A7B004DF911 /* AppDelegate.swift in Sources */,
 				968D94E321372BEC004DF911 /* DataTableViewController.swift in Sources */,

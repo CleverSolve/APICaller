@@ -22,26 +22,33 @@ class DataTableViewController: UITableViewController
     {
         super.viewDidLoad()
         
-        if let path = Bundle.main.path(forResource: "MSFT", ofType: "json") {
-            do {
+        if let path = Bundle.main.path(forResource: "MSFT", ofType: "json")
+        {
+            do
+            {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? Dictionary<String, AnyObject>  {
+                if let jsonResult = jsonResult as? Dictionary<String, AnyObject>
+                {
                     print(jsonResult)
                     print("BLAH BLAH BLAH BLAH")
                     print(jsonResult.keys)
-                     print("BLAH BLAH BLAH BLAH")
-                    for key in jsonResult.keys{
+                    print("BLAH BLAH BLAH BLAH")
+                    
+                    for key in jsonResult.keys
+                    {
                         print("SEPERATOR")
-                    print(jsonResult[key])
+                        print(jsonResult[key])
                     }
+                    
                     print("Outside the loop now")
                     let myDict  = jsonResult["Time Series (Daily)"]
                    
                     print("type is \(type(of: myDict))")
                     print("myDict is \(myDict!)")
                 }
-            } catch {
+            } catch
+            {
                 print("error loading")
             }
         }
@@ -55,6 +62,7 @@ class DataTableViewController: UITableViewController
     {
         return 1
     }
+    
     // NUMBER OF ROWS IN SECTION
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -73,9 +81,11 @@ class DataTableViewController: UITableViewController
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         numberFormatter.maximumFractionDigits = 2
-        switch indexPath.row{
+        switch indexPath.row
+        {
         case 0:
-        if let myData = dataDict["2018-08-29"]{
+        if let myData = dataDict["2018-08-29"]
+        {
             cell.Name.text = "MSFT"
             
             //If close >= open, make cell.Price textColor green (rgb: 0,1.0, 0)
@@ -104,7 +114,8 @@ class DataTableViewController: UITableViewController
             
             cell.stat6.text = "Mid: " +  numberFormatter.string(from: ((myData["low"]! + myData["high"]!) / 2.0) as! NSNumber)!
         }
-        else{
+        else
+        {
             print("not able to get myData?")
         }
         default:
@@ -125,7 +136,8 @@ class DataTableViewController: UITableViewController
         let num = abs(Double(n))
         let sign = (n < 0) ? "-" : ""
         
-        switch num {
+        switch num
+        {
             
         case 1_000_000_000...:
             var formatted = num / 1_000_000_000
@@ -166,9 +178,12 @@ class DataTableViewController: UITableViewController
         super.didReceiveMemoryWarning()
     }
 }
-// ?
-extension Double {
-    func truncate(places: Int) -> Double {
+
+// Extension for Doubles
+extension Double
+{
+    func truncate(places: Int) -> Double
+    {
         return Double(floor(pow(10.0, Double(places)) * self)/pow(10.0, Double(places)))
     }
 }
