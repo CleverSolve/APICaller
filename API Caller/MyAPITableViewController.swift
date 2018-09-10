@@ -10,9 +10,9 @@ import UIKit
 import Foundation
 
 
+
 class MyAPITableViewController: UITableViewController
 {
-    let URL_IMAGE = URL(string: "http://static3.businessinsider.com/image/5484d9d1eab8ea3017b17e29/9-science-backed-reasons-to-own-a-dog.jpg")
     
     // Courses Array
     var courses = [Course]()
@@ -23,40 +23,6 @@ class MyAPITableViewController: UITableViewController
         super.viewDidLoad()
         
          apiCall()
-        
-        // TESTING
-        
-//        let session = URLSession(configuration: .default)
-//
-//        let getImageFromUrl = session.dataTask(with: URL_IMAGE!){ (data, response, error) in
-//
-//            if let e = error
-//            {
-//                print("An error occured: \(e)")
-//            }
-//            else
-//            {
-//                if(response as? HTTPURLResponse) != nil
-//                {
-//                    if let imageData = data
-//                    {
-//                        let image = UIImage(data: imageData)
-//
-//                        CImgView.image = image
-//                    }
-//                    else
-//                    {
-//                        print("no image found")
-//                    }
-//                }
-//                else
-//                {
-//                    print("No respose from server")
-//                }
-//            }
-//
-//        }
-//        getImageFromUrl.resume()
     }
     
     // Course Struct
@@ -65,7 +31,7 @@ class MyAPITableViewController: UITableViewController
         let id: Int
         let name: String
         let link: String
-        
+
         let numberOfLessons: Int
         let imageUrl: String
         
@@ -144,121 +110,117 @@ class MyAPITableViewController: UITableViewController
     //MARK: CellForRowAt
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyAPICell", for: indexPath) as! MyAPITableViewCell
         
         let course = courses[indexPath.row]
         
-        //>> testing
+        //---This is for displaying the image----------------
+        let url = URL(string: course.imageUrl)
+        let imgdata = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+        //------------------------------
+        
+        // Formatted Text
+        let formattedID = NSMutableAttributedString()
+        formattedID
+            .bold("ID: ")
+            .normal(String(course.id))
+        
+        let formattedName = NSMutableAttributedString()
+        formattedName
+            .bold("Name: ")
+            .normal(course.name)
 
-        //>> testing
+        let formattedLink = NSMutableAttributedString()
+        formattedLink
+            .bold("Link: ")
+            .normal(course.link)
         
-        cell.ID.text = "ID: " + String(course.id)
-        cell.Name.text = "Name: " + course.name
-        cell.Link.text = "Link: " + course.link
-        cell.ImgUrl.text = "Image: " + course.imageUrl
-        cell.NumOfLessons.text = "Number of Lessons: " + String(course.numberOfLessons)
+        let formattedImgUrl = NSMutableAttributedString()
+        formattedImgUrl
+            .bold("ImgUrl: ")
+            .normal(course.imageUrl)
         
-        //>> testing
-        //cell.CImgView.image = imageUrl
-        //>> testing
+        let formattedNumOfLessons = NSMutableAttributedString()
+        formattedNumOfLessons
+            .bold("Lessons: ")
+            .normal(String(course.numberOfLessons))
+            // -----Format Text-----
         
+        
+        // ---Round the Image Corners---
+        cell.CImgView.layer.cornerRadius = 10;
+        cell.CImgView.layer.masksToBounds = true;
+        
+        //cell.ID.text = "ID: " + String(course.id)
+        //cell.Name.text = "Name: " + course.name
+        //cell.Link.text = "Link: " + course.link
+        //cell.ImgUrl.text = "Image: " + course.imageUrl
+        //cell.NumOfLessons.text = "Lessons: " + String(course.numberOfLessons)
+        
+        
+        // ---Write formatted info to cell--
+        cell.ID.attributedText = formattedID
+        cell.Name.attributedText = formattedName
+        cell.Link.attributedText = formattedLink
+        cell.ImgUrl.attributedText = formattedImgUrl
+        cell.CImgView.image = UIImage(data: imgdata!)
+        cell.NumOfLessons.attributedText = formattedNumOfLessons
+        
+        
+
         return cell
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        
+        // NEED TO MOVE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
          let course = courses[indexPath.row]
+        
+        let url = URL(string: course.link)
+        let imgdata = try? Data(contentsOf: url!)
+        // NEED TO MOVE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
+        
         
         // <ggonza> Deselects the row after it has been selected
         tableView.deselectRow(at: indexPath, animated: true)
         
-        // <ggonza> Create an alert message
-        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row)", preferredStyle: .alert)
+        // ROW CODE
         
-        // <ggonza> OK button on the alert Message
-        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        
-        // <ggonza> <?> adds the ok button to the alert message
-        alertController.addAction(alertAction)
-        
-        // <ggonza> if Extra is selected
         if(indexPath.row == 0)
         {
-            alertController.title = "Message"
-            alertController.message = "You selected: " + course.name
-            // <ggonza> Displays the alert controller
-            present(alertController, animated: true, completion: nil)
+            UIApplication.shared.openURL(NSURL(string: course.link)! as URL)
         }
         if(indexPath.row == 1)
         {
-            alertController.title = "Message"
-            alertController.message = "You selected: " + course.name
-            // <ggonza> Displays the alert controller
-            present(alertController, animated: true, completion: nil)
+            UIApplication.shared.openURL(NSURL(string: course.link)! as URL)
         }
         if(indexPath.row == 2)
         {
-            alertController.title = "Message"
-            alertController.message = "You selected: " + course.name
-            // <ggonza> Displays the alert controller
-            present(alertController, animated: true, completion: nil)
+
+            UIApplication.shared.openURL(NSURL(string: course.link)! as URL)
         }
-        
-      
     }
-    
-    
-    
-    
-    
-    
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
+// For Making Text Bold
+extension NSMutableAttributedString
+{
+    @discardableResult func bold(_ text: String) -> NSMutableAttributedString
+    {
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont(name: "Roboto-Bold", size: 17)!]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        
+        return self
+    }
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString
+    {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        
+        return self
+    }
+}
