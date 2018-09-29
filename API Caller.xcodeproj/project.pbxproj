@@ -32,6 +32,8 @@
 		968D94E121372BD6004DF911 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E021372BD6004DF911 /* DataTableViewCell.swift */; };
 		968D94E321372BEC004DF911 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E221372BEC004DF911 /* DataTableViewController.swift */; };
 		968D94E521372CD3004DF911 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D94E421372CD3004DF911 /* DesignableView.swift */; };
+		96B0EE852147006900C90156 /* BitCoinTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0EE842147006900C90156 /* BitCoinTVC.swift */; };
+		96B0EE87214700CC00C90156 /* BitCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0EE86214700CC00C90156 /* BitCoinTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		968D94E021372BD6004DF911 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		968D94E221372BEC004DF911 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		968D94E421372CD3004DF911 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		96B0EE842147006900C90156 /* BitCoinTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinTVC.swift; sourceTree = "<group>"; };
+		96B0EE86214700CC00C90156 /* BitCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				9617B7AC213730BE00BF794B /* fonts */,
 				968D94C621371A7B004DF911 /* AppDelegate.swift */,
 				968D94CA21371A7B004DF911 /* Main.storyboard */,
+				96B0EE86214700CC00C90156 /* BitCoinTableViewCell.swift */,
+				96B0EE842147006900C90156 /* BitCoinTVC.swift */,
 				968D94E421372CD3004DF911 /* DesignableView.swift */,
 				968D94CD21371A7B004DF911 /* Assets.xcassets */,
 				968D94CF21371A7B004DF911 /* LaunchScreen.storyboard */,
@@ -216,11 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B0EE852147006900C90156 /* BitCoinTVC.swift in Sources */,
 				968C0B64213FD37C006F213A /* Model.swift in Sources */,
 				9642BC13213F18C90025DD99 /* MyAPITableViewCell.swift in Sources */,
 				9642BC11213F15750025DD99 /* MyAPITableViewController.swift in Sources */,
 				968D94E521372CD3004DF911 /* DesignableView.swift in Sources */,
 				968D94C721371A7B004DF911 /* AppDelegate.swift in Sources */,
+				96B0EE87214700CC00C90156 /* BitCoinTableViewCell.swift in Sources */,
 				968D94E321372BEC004DF911 /* DataTableViewController.swift in Sources */,
 				968D94E121372BD6004DF911 /* DataTableViewCell.swift in Sources */,
 			);
